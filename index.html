@@ -41,6 +41,25 @@
       </div>
     </div>
 
-    <script src="app.js"></script>
+    <script>
+      clickFunction = () => {
+            var numInput = document.getElementById("output").value;
+            const printOut = document.getElementById("outputResult");
+            const incorrectOutput = !/^[1-9][0-9]*$/.test(numInput);
+
+            if (incorrectOutput) {
+              printOut.innerHTML = "<span style='color : red;'>Invalid input!</span>";  
+            } else if (numInput % 15 === 0) {
+              printOut.innerHTML = "FizzBuzz!";  
+            } else if (numInput % 3 === 0) {
+              printOut.innerHTML = "Fizz!";   
+            } else if (numInput % 5 === 0) {
+              printOut.innerHTML = "Buzz!";  
+            } else {
+              printOut.innerHTML = numInput;
+            }
+            console.log(numInput);
+          }
+    </script>
   </body>
 </html>
