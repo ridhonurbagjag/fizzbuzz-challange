@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  font-family: "Lucida Grande", sans-serif;
+ }
+
+/* input your code here */
+.container {
+  width: 70%; 
+  height: 550px;
+  margin: 100px auto;
+  background-color: gainsboro;
+  border-radius: 5rem;
+  display: flex;
+  box-shadow: 0 3px 10px #a17a69;
+}
+.image-left {
+  /* Image by Yasmim Maximiano via Pinterest
+  https://www.pinterest.com/pin/666392076101292500/*/
+  width: 50%;
+  background: url(https://i.pinimg.com/originals/dd/29/a7/dd29a79ca54a121140e583d7627e0ce2.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius: 5rem 0 0 5rem;
+}
+.content-right {
+  width: 50%;
+  background-color: white;
+  border-radius: 0 5rem 5rem 0;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  padding: 16px;
+}
+
+.content-right .text1 {
+  color: red;
+}
+
+.content-right .text2 {
+  color: lightskyblue;
+}
+.input-content {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  padding: 16px 0;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.input-content p,
+input,
+button {
+  margin-bottom: 16px;
+}
+.input-style {
+  border-radius: 10px;
+  width: 70%;
+  padding: 2px;
+  border: 2px solid black;
+  text-align: center;
+  font-size: 20px;
+}
+
+.button {
+  background-color: white;
+  font-size: 20px;
+}
+.button:hover {
+  background-color: whitesmoke;
+  cursor: pointer;
+}
+.output-content {
+  margin-top: auto;
+  width: 70%;
+}
+.text-output {
+  text-align: center;
+  font-size: 46px;
+}
+ .footer{
+  margin-top: auto;
+}
